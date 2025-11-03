@@ -2,7 +2,7 @@
 
 ## Data Analyst | Healthcare Analytics | Business Intelligence
 
-📍  4+ years of experience transforming data into actionable insights
+📍 4+ years of experience transforming data into actionable insights
 
 ### 🔍 About Me
 Data Analyst specializing in healthcare analytics and engagement platforms. Experienced in managing high-volume datasets (5000+ daily transactions) and delivering insights through Power BI dashboards that drive business decisions.
@@ -10,7 +10,7 @@ Data Analyst specializing in healthcare analytics and engagement platforms. Expe
 ### 💼 Current Role
 **Data Analyst** at Inditech Technologies
 - Managing 30+ client projects
-- Improved platform engagement by 15% through data-driven insights
+- Improved user engagement by 15% through data-driven insights
 - Building automated reporting solutions for healthcare education platforms
 
 ### 🛠️ Technical Skills
@@ -26,8 +26,12 @@ Data Analyst specializing in healthcare analytics and engagement platforms. Expe
 ### 📊 Featured Projects
 - 🚗 [Uber Operations Analytics](https://github.com/yourusername/data-analytics-portfolio/tree/main/uber-analytics) - 148k rides analyzed
 - 🍔 [Swiggy Restaurant Performance](https://github.com/yourusername/data-analytics-portfolio/tree/main/swiggy-analysis) - 8680 restaurants across India
-- 🏥 Healthcare Engagement Analytics *(Coming Soon)*
+
 
 ### 📫 Let's Connect
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)]([your-linkedin-url](https://www.linkedin.com/in/vara-prasad-b2210b391/))
-[![Email](https://img.shields.
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:varaprasaddata@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=github&logoColor=white)](https://github.com/yourusername/data-analytics-portfolio)
+
+
+💡 *Open to data analyst opportunities | Available for freelance analytics projects*
