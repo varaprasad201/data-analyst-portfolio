@@ -2,15 +2,15 @@
 
 ## Data Analyst | Healthcare Analytics | Business Intelligence
 
-📍 Based in Kurnool, Andhra Pradesh | 4+ years of experience transforming data into actionable insights
+📍  4+ years of experience transforming data into actionable insights
 
 ### 🔍 About Me
 Data Analyst specializing in healthcare analytics and engagement platforms. Experienced in managing high-volume datasets (5000+ daily transactions) and delivering insights through Power BI dashboards that drive business decisions.
 
 ### 💼 Current Role
-**Data Analyst** at Inditech Technology Services, Mumbai
-- Managing 30+ pharmaceutical client projects
-- Improved campaign engagement by 15% through data-driven insights
+**Data Analyst** at Inditech Technologies
+- Managing 30+ client projects
+- Improved platform engagement by 15% through data-driven insights
 - Building automated reporting solutions for healthcare education platforms
 
 ### 🛠️ Technical Skills
@@ -29,5 +29,5 @@ Data Analyst specializing in healthcare analytics and engagement platforms. Expe
 - 🏥 Healthcare Engagement Analytics *(Coming Soon)*
 
 ### 📫 Let's Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](your-linkedin-url)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)]([your-linkedin-url](https://www.linkedin.com/in/vara-prasad-b2210b391/))
 [![Email](https://img.shields.
