@@ -23,15 +23,9 @@ Data Analyst specializing in healthcare analytics and engagement platforms. Expe
 
 **Specialization**: Healthcare Analytics • Campaign Performance • Business Intelligence • Data Visualization
 
-### 📊 Featured Projects
-- 🚗 [Uber Operations Analytics](https://github.com/yourusername/data-analytics-portfolio/tree/main/uber-analytics) - 148k rides analyzed
-- 🍔 [Swiggy Restaurant Performance](https://github.com/yourusername/data-analytics-portfolio/tree/main/swiggy-analysis) - 8680 restaurants across India
-
 
 ### 📫 Let's Connect
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)]([your-linkedin-url](https://www.linkedin.com/in/vara-prasad-b2210b391/))
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:varaprasaddata@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=github&logoColor=white)](https://github.com/yourusername/data-analytics-portfolio)
-
 
 💡 *Open to data analyst opportunities | Available for freelance analytics projects*
