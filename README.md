@@ -25,7 +25,6 @@ Data Analyst specializing in healthcare analytics and engagement platforms. Expe
 
 
 ### 📫 Let's Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)]([your-linkedin-url](https://www.linkedin.com/in/vara-prasad-b2210b391/))
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:varaprasaddata@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vara-prasad-b2210b391/)[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:varaprasaddata@gmail.com)
 
 💡 *Open to data analyst opportunities | Available for freelance analytics projects*
