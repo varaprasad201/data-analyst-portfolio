@@ -198,9 +198,9 @@ Open Uber_Trip_Analysis.pbix
 
 ## 👤 Author
 
-**Your Name**  
+**Vara Prasad**  
 📧 Email: varaprasaddata@gmail.com  
-💼 LinkedIn: [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/vara-prasad-b2210b391/))  
+💼 LinkedIn: [linkedin.com/in/vara-prasad-b2210b391](https://www.linkedin.com/in/vara-prasad-b2210b391/)  
 
 ---
 
