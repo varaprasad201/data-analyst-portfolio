@@ -199,15 +199,8 @@ Open Uber_Trip_Analysis.pbix
 ## 👤 Author
 
 **Your Name**  
-📧 Email: your.email@example.com  
-💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-🌐 Portfolio: [yourportfolio.com](https://yourportfolio.com)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+📧 Email: varaprasaddata@gmail.com  
+💼 LinkedIn: [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/vara-prasad-b2210b391/))  
 
 ---
 
