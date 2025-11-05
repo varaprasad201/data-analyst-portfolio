@@ -1,0 +1,183 @@
+
+/*
+===============================================
+DAX MEASURES - TRIP BOOKING ANALYTICS PROJECT
+===============================================
+Author: Dev Prasad
+Description: Power BI DAX measures for analyzing trip booking data including 
+             booking metrics, distance calculations, and location insights
+===============================================
+*/
+
+/* =====================
+   BASIC BOOKING METRICS
+   ===================== */
+
+-- Total Bookings: Count of unique trip IDs
+Total Bookings = 
+DISTINCTCOUNTNOBLANK('Trip Details'[Trip ID])
+
+
+-- Total Booking Amount: Sum of fare amount and surge fees with rounding
+Total Booking Amount = 
+ROUND(
+    SUM('Trip Details'[fare_amount]) + SUM('Trip Details'[Surge Fee]), 
+    2
+)
+
+
+-- Average Booking Amount: Average fare per booking
+Avg Booking Amount = 
+ROUND(
+    DIVIDE([Total Booking Amount], [Total Bookings], 0), 
+    2
+)
+
+
+/* =====================
+   DISTANCE METRICS
+   ===================== */
+
+-- Total Trip Distance: Sum of all trip distances
+Total Trip Distance = 
+SUM('Trip Details'[trip_distance])
+
+
+-- Average Trip Distance: Mean distance per trip
+Average Trip Distance = 
+DIVIDE([Total Trip Distance], [Total Bookings], 0)
+
+
+-- Total Trip Distance Display: Formatted display with K suffix for thousands
+Total Trip Distance Display = 
+VAR totalmiles = [Total Trip Distance] / 1000
+RETURN 
+    CONCATENATE(FORMAT(totalmiles, "0.0"), "K miles")
+
+
+-- Avg Trip Distance Display: Formatted display with miles suffix
+Avg Trip Distance Display = 
+VAR avgmiles = ROUND([Average Trip Distance], 1)
+RETURN 
+    CONCATENATE(avgmiles, " miles")
+
+
+/* =====================
+   TIME METRICS
+   ===================== */
+
+-- Avg Trip Time: Average duration between pickup and drop-off in minutes
+Avg Trip Time = 
+AVERAGEX(
+    'Trip Details', 
+    DATEDIFF('Trip Details'[Pickup Time], 'Trip Details'[Drop Off Time], MINUTE)
+)
+
+
+-- Avg Trip Time Display: Formatted display with min suffix
+Avg Trip Time Display = 
+VAR avgtriptime = ROUND([Avg Trip Time], 0)
+RETURN 
+    CONCATENATE(avgtriptime, " min")
+
+
+/* =====================
+   LOCATION INSIGHTS
+   ===================== */
+
+-- Most Frequent Pickup Point: Identifies the location with highest pickup count
+Most Frequent Pickup Point = 
+VAR PickPoint = 
+    TOPN(
+        1,
+        SUMMARIZE(
+            'Trip Details',
+            'Location Table'[Location],
+            "Pickup Point", COUNT('Trip Details'[Trip ID])
+        ),
+        [Pickup Point], DESC
+    )
+RETURN 
+    CONCATENATEX(
+        PickPoint, 
+        'Location Table'[Location] & " (" & [Pickup Point] & ")", 
+        ","
+    )
+
+
+-- Most Frequent Dropoff Point: Identifies the location with highest drop-off count
+Most Frequent Dropoff Point = 
+VAR DropoffCounts = 
+    ADDCOLUMNS(
+        SUMMARIZE('Trip Details', 'Location Table'[Location]), 
+        "DropOff Count",
+        CALCULATE(
+            COUNT('Trip Details'[Trip ID]),
+            USERELATIONSHIP('Trip Details'[DOLocationID], 'Location Table'[LocationID])
+        )
+    )
+VAR RankedDropOffs = 
+    ADDCOLUMNS(
+        DropoffCounts,
+        "RANK",
+        RANKX(DropoffCounts, [DropOff Count], , DESC, DENSE)
+    )
+VAR TopDropoff = 
+    FILTER(RankedDropOffs, [RANK] = 1)
+RETURN
+    CONCATENATEX(
+        TopDropoff, 
+        'Location Table'[Location] & " (" & [DropOff Count] & ")", 
+        ", "
+    )
+
+
+-- Farthest Trip: Identifies the longest trip with pickup and drop-off locations
+Farthest Trip = 
+VAR MaxDistance = MAX('Trip Details'[trip_distance])
+VAR PickupLocation = 
+    LOOKUPVALUE(
+        'Location Table'[Location], 
+        'Location Table'[LocationID],
+        CALCULATE(
+            SELECTEDVALUE('Trip Details'[PULocationID]),
+            'Trip Details'[trip_distance] = MaxDistance
+        )
+    )
+VAR DropoffLocation = 
+    LOOKUPVALUE(
+        'Location Table'[Location], 
+        'Location Table'[LocationID],
+        CALCULATE(
+            SELECTEDVALUE('Trip Details'[DOLocationID]),
+            'Trip Details'[trip_distance] = MaxDistance
+        )
+    )
+RETURN 
+    "Pickup: " & PickupLocation & 
+    "➡️ Drop-Off: " & DropoffLocation & 
+    " (" & FORMAT(MaxDistance, "0.0") & " miles)"
+
+
+/* =====================
+   DYNAMIC TITLES
+   ===================== */
+
+-- Title for Pickup Time: Dynamic title based on selected measure
+Title for Pickup Time = 
+SELECTEDVALUE('Dynamic Measure'[Dynamic Title]) & " [Pickup Time]"
+
+
+-- Title for Day Name: Dynamic title for day-wise analysis
+Title for Day Name = 
+SELECTEDVALUE('Dynamic Measure'[Dynamic Title]) & " by Day Name"
+
+
+-- Title for Hour & Day: Dynamic title for hourly and daily analysis
+Title for Hour & Day = 
+SELECTEDVALUE('Dynamic Measure'[Dynamic Title]) & " by Hour & Day"
+
+
+/* =====================
+   END OF FILE
+   ===================== */
