@@ -29,6 +29,22 @@ Technologies Used:
 
 ---
 
+## 📊 **Project Report Screenshots**
+
+### 🖼️ Home Page
+
+![Home Page](home_page.png)
+
+### 🖼️ Analysis Page
+
+![Analysis Page](analysis_page.png)
+
+### 🖼️ Summary Page
+
+![Summary Page](summary_page.png)
+
+---
+
 ## 📊 Key Performance Indicators (KPIs)
 
 * **Total Revenue** = SUM(total_price)
@@ -41,7 +57,7 @@ Technologies Used:
 
 ## 🧱 **Database Schema – PostgreSQL**
 
-### **Create Table: ****pizza_sales**
+### **Create Table: `pizza_sales`**
 
 ```sql
 CREATE TABLE pizza_sales
