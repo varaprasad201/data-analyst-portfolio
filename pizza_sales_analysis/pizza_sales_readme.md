@@ -31,17 +31,9 @@ Technologies Used:
 
 ## 📊 **Project Report Screenshots**
 
-### 🖼️ Home Page
-
-![Home Page](home_page.png)
-
-### 🖼️ Analysis Page
-
-![Analysis Page](analysis_page.png)
-
-### 🖼️ Summary Page
-
-![Summary Page](summary_page.png)
+![Home Page](images/home_page.png)
+![Analysis Page](images/analysis_page.png)
+![Summary Page](images/summary_page.png)
 
 ---
 
